@@ -62,6 +62,7 @@ class TicTacToe
     WIN_COMBINATIONS.detect do |combo|
       @board[combo[0..2]] == "X" || @board[combo[0..2]] == "O"
     end
+  end
 
     def full?
       @board.all? {|token| token == "X" || token == "O"}
